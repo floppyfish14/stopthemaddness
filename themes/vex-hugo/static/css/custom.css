@@ -139,3 +139,27 @@ footer {
   padding-top: 20px;
   text-align: center;
 }
+
+
+@media(max-width: 640px) {
+  .flip-card {
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+  }
+  .btn-main {
+    font-size: 10px !important;
+    padding: 5px 5px !important;
+  }
+  h1, .h1 {
+    font-size: 25px !important;
+    line-height: 20px !important;
+  }
+
+}
+@media(min-width: 641px) and (max-width: 800px) {
+}
+@media(min-width: 801px) and (max-width: 1024px) {
+}
+@media(min-width: 1025px) {
+}
