@@ -55,7 +55,6 @@ theme = "vex-hugo"
 ########################### Default parameters ##########################
 [params]
 logo = ""
-home = "Home"
 # Meta data
 description = "I survived Covid-19 T-Shirt"
 author = "stopthemaddness"
