@@ -17,3 +17,13 @@ Essentials Only:
   image : "images/shirt.jpeg"
   backimage: "images/shirt-back.jpeg"
   button: "re-Order Now! $19.99"
+
+Change:
+  name : "We need Change"
+  price : "19.99"
+  colors : ["gray"]
+  sizes : ["small","medium","large"]
+  content : ""
+  image : "images/shirt.jpeg"
+  backimage: "images/shirt-back.jpeg"
+  button: "Order Now! $19.99"
