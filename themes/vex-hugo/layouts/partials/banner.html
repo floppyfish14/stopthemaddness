@@ -5,8 +5,8 @@
                 <h1 class="mb-4 font-size-30 titlepre take-cover">{{ .titlepre | markdownify }} {{ .takecover | markdownify }}</h1>
         </div>
         {{ end }}
-        {{- range .Site.Data.products }}
         <section class="section textdrop grid-container">
+        {{- range .Site.Data.products }}
 	<div class="container grid-item">
 		<div class="row">
 			<!--div class="col-md-6 text-center mb-5 mb-md-0 padded-bottom"-->
