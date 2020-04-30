@@ -4,8 +4,8 @@ Covid19:
   colors : ["gray"]
   sizes : ["small","medium","large"]
   titlepre : "Plan on surviving"
-  takecover: "Covid-19"
-  titlepost: "? Have a T-Shirt to prove it."
+  takecover: "Covid-19?"
+  titlepost: "Have a T-Shirt to prove it."
   content : ""
   image : "images/shirt.jpeg"
   backimage: "images/shirt-back.jpeg"
@@ -18,7 +18,7 @@ Essentials Only:
   sizes : ["small","medium","large"]
   titlepre : "Plan on surviving"
   takecover: "the Virus"
-  titlepost: "? Have a T-Shirt to prove it."
+  titlepost: "Have a T-Shirt to prove it."
   content : ""
   image : "images/shirt.jpeg"
   backimage: "images/shirt-back.jpeg"

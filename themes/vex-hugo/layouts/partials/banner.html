@@ -18,7 +18,7 @@
 			</div>
 			<div class="col-md-6 align-self-center text-center text-md-left">
 				<div class="block banner-text">
-                                        <h1 class="font-weight-bold mb-4 font-size-60">{{ .titlepre | markdownify }}</h1><h1 class="mb-4 font-size-60" style='font-family: takecover;'> {{ .takecover }}</h1><h1 class="font-weight-bold mb-4 font-size-60">{{ .titlepost| markdownify }}</h1>
+                                        <h1 class="font-weight-bold mb-4 font-size-60">{{ .titlepre | markdownify }}</h1><h1 class="mb-4 font-size-60" style='font-family: takecover;'> {{ .takecover }}</h1>
 					<p class="mb-4">{{ .content | markdownify }}</p>
 					<button class="snipcart-add-item btn btn-main" 
 					  data-item-id="{{ .name | urlize }}__{{ .price }}"
@@ -33,6 +33,7 @@
 						data-item-custom2-name="Choose Size"
 						data-item-custom2-options="{{ range $index, $element:= .sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
 						{{ end }}>{{ .button }}</button>
+                                        <h2 class="font-weight-bold mb-4 font-size-60">{{ .titlepost| markdownify }}</h2>
 				</div>
 			</div>
 		</div><!-- .row close -->
