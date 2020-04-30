@@ -1,8 +1,8 @@
 <!-- hero area -->
 <section class="section">
         {{- range .Site.Data.title }}
-        <div class="container no-wrap textdrop">
-                <h1 class="mb-4 font-size-30 titlepre take-cover">{{ .titlepre | markdownify }} {{ .takecover | markdownify }}</h1>
+        <span class="container no-wrap">
+                <h1 class="font-weight-bold mb-4 font-size-30">{{ .titlepre | markdownify }}</h1><h1 class="mb-4 font-size-30 take-cover">{{ .takecover | markdownify }}</h1><h1 class="font-weight-bold mb-4 font-size-30">{{ .titlepost| markdownify }}</h1>
         </div>
         {{ end }}
         {{- range .Site.Data.products }}
@@ -22,7 +22,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+			</div>
 					<p class="mb-4">{{ .content | markdownify }}</p>
 					<button class="snipcart-add-item btn btn-main" 
 					  data-item-id="{{ .name | urlize }}__{{ .price }}"
@@ -38,13 +38,10 @@
 						data-item-custom2-options="{{ range $index, $element:= .sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
 						{{ end }}>{{ .button }}</button>
                                         <h2 class="font-weight-bold mb-4 font-size-60">
-                </div><!-- .row close -->
-        </div><!-- .container close -->
+				</div>
+			</div>
+		</div><!-- .row close -->
         {{- end }}
         </section>
+	</div><!-- .container close -->
 </section><!-- header close -->
-{{- range .Site.Data.title }}
-<div class="container textdrop">
-<h1 class="font-weight-bold mb-4 font-size-30 titlepost">{{ .titlepost| markdownify }}</h1>
-</div>
-{{ end }}
