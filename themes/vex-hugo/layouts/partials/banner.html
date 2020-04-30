@@ -1,11 +1,11 @@
 <!-- hero area -->
 <section class="section">
         {{- range .Site.Data.title }}
-        <div class="container no-wrap textdrop">
+        <div id="firstTitle" class="container no-wrap textdrop">
                 <h1 class="mb-4 font-size-30 titlepre take-cover">{{ .titlepre | markdownify }} {{ .takecover | markdownify }}</h1>
         </div>
         {{ end }}
-        <section class="section textdrop grid-container">
+        <section class="container section textdrop grid-container">
         {{- range .Site.Data.products }}
 	<div class="container grid-item">
 		<div class="row">
@@ -22,29 +22,29 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-					<p class="mb-4">{{ .content | markdownify }}</p>
-					<button class="snipcart-add-item btn btn-main" 
-					  data-item-id="{{ .name | urlize }}__{{ .price }}"
-						data-item-name="{{ .name }}"
-						data-item-image="{{ .image | absURL }}"
-						data-item-price="{{ .price }}" data-item-url="{{ .Permalink }}" 
-						{{ if .colors }}
-						data-item-custom1-name="Choose Color"
-						data-item-custom1-options="{{ range $index, $element:= .colors }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
-						{{ end }}
-						{{ if .sizes }} 
-						data-item-custom2-name="Choose Size"
-						data-item-custom2-options="{{ range $index, $element:= .sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
-						{{ end }}>{{ .button }}</button>
-                                        <h2 class="font-weight-bold mb-4 font-size-60">
-                </div><!-- .row close -->
-        </div><!-- .container close -->
+				<p class="mb-4">{{ .content | markdownify }}</p>
+				<button class="snipcart-add-item btn btn-main" 
+				  data-item-id="{{ .name | urlize }}__{{ .price }}"
+                                  data-item-name="{{ .name }}"
+                                  data-item-image="{{ .image | absURL }}"
+                                  data-item-price="{{ .price }}" data-item-url="{{ .Permalink }}" 
+				  {{ if .colors }}
+				  data-item-custom1-name="Choose Color"
+				  data-item-custom1-options="{{ range $index, $element:= .colors }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
+				  {{ end }}
+				  {{ if .sizes }} 
+                                  data-item-custom2-name="Choose Size"
+				  data-item-custom2-options="{{ range $index, $element:= .sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
+				  {{ end }}>{{ .button }}</button>
+                                <h2 class="font-weight-bold mb-4 font-size-60"></h2>
+                        </div><!-- block close -->
+                </div><!-- row close -->
+        </div><!-- container close -->
         {{- end }}
         </section>
 </section><!-- header close -->
 {{- range .Site.Data.title }}
-<div class="container textdrop">
+<div id="finalTitle" class="container textdrop">
 <h1 class="font-weight-bold mb-4 font-size-30 titlepost">{{ .titlepost| markdownify }}</h1>
 </div>
 {{ end }}

@@ -5,9 +5,13 @@
         background-color: #d8d8d8 !important;
         background-image: url(../images/7-noise-texture-overlays-2.png) !important;
 }
+#firstTitle {
+        padding-top: 20px;
+}
 .btn-main {
         background-color: #a21c19 !important;
         box-shadow: 0 0px 0px rgba(162, 23, 18) !important;
+        margin-top: 75px;
 }
 .btn-main:hover {
         background-color: #a21c19 !important;
@@ -38,7 +42,7 @@ footer {
 }
 .textdrop {
         background-color: rgba(216,216,216, 0.97);
-        padding: 10px 10px;
+        padding: 5px 0px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -48,6 +52,8 @@ footer {
   height: 200px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   display: inline-block;
+  padding: 5px;
+  margin: 30px;
 }
 
 /* This container is needed to position the front and back side */
@@ -104,7 +110,7 @@ footer {
   padding-bottom: 30px;
 }
 .section {
-  padding: 20px !important;
+  padding: 0px !important;
 }
 
 /* Create a grid system for the products */
@@ -112,11 +118,10 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
+  justify-content: center;
 }
 .grid-container > div {
-  background-color: rgba(255,255,255,0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
